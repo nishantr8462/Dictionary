@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    /* Add background image */
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent overlay */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 20px;
+}
+
+.search-form,
+.card {
+    width: 400px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+.search-form input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.search-form button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    border-left: 1px solid rgba(245, 245, 245, 0.263);
+}
+
+.search-form button:hover {
+    background-color: rgb(244, 244, 244);
+    color: black;
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    background-color: rgb(8, 7, 7);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.property {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+
+.property span:first-child {
+    font-weight: bold;
+    color: lightblue;
+}
+
+.property span:last-child {
+    color: whitesmoke;
+}
+
+audio {
+    margin-top: 1rem;
+}
